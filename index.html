@@ -34,6 +34,42 @@
 			</nav>
 		</div>
 	</header>
+
+	<div class="mobile-navigation" aria-label="mobile-navigation">
+		<label for="toggler-id" aria-label="open-close mobile-navigation menu">
+			<svg class="mobile-navigation-burger" aria-label="burger icon">
+				<use href="assets/sprites.svg#burger-icon"></use>
+			</svg>
+		</label>
+		<input class="mobile-navigation-toggler" type="checkbox" id="toggler-id">
+
+		<nav class="mobile-navigation-menu" aria-label="mob header navigation">
+			<ul class="mobile-navigation-list" aria-label="mob header navigation list">
+				<li>
+					<a class="mobile-navigation-link" href="#home-id" aria-label="link to home">Home</a>
+				</li>
+				<li>
+					<a class="mobile-navigation-link" href="#about-id" aria-label="link to about">About</a>
+				</li>
+				<li>
+					<a class="mobile-navigation-link" href="#history-id" aria-label="link to history">History</a>
+				</li>
+				<li>
+					<a class="mobile-navigation-link" href="#portfolio-id" aria-label="link to portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a class="mobile-navigation-link" href="#contacts-id" aria-label="link to contacts">Contacts</a>
+				</li>
+			</ul>
+
+			<label class="mobile-navigation-close" for="toggler-id" aria-label="open-close mobile-navigation menu">
+				<svg class="mobile-navigation-cross" aria-label="cross icon">
+					<use href="assets/sprites.svg#cross-icon"></use>
+				</svg>
+			</label>
+		</nav>
+	</div>
+
 	<main aria-label="main">
 		<section class="home" aria-label="home section" id="home-id">
 			<div class="container">
@@ -73,20 +109,17 @@
 			<div class="container">
 				<h2 class="portfolio-title" aria-label="portfolio title">Portfolio</h2>
 				<img class="portfolio-picture" src="assets/webp/portfolio_1.webp" alt="Winter wagon train on the way">
-				<p class="portfolio-description" aria-label="picture 1 description">
-					Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857
-				</p>
+				<p class="portfolio-description" aria-label="picture 1 description">Зимний обоз в пути, 1857 г. | Winter wagon train on
+					the way, 1857</p>
 				<img class="portfolio-picture" src="assets/webp/portfolio_2.webp" alt="Rainbow">
-				<p class="portfolio-description" aria-label="picture 2 description">
-					Радуга, 1873 г. | Rainbow, 1873
-				</p>
+				<p class="portfolio-description" aria-label="picture 2 description">Радуга, 1873 г. | Rainbow, 1873</p>
 				<img class="portfolio-picture" src="assets/webp/portfolio_3.webp" alt="Gulf of Naples in the morning">
-				<p class="portfolio-description" aria-label="picture 3 description">
-					Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893
-				</p>
+				<p class="portfolio-description" aria-label="picture 3 description">Неаполитанский залив утром, 1893 г. | Gulf of Naples
+					in the morning, 1893</p>
 			</div>
 		</section>
 	</main>
+
 	<footer class="contacts" aria-label="contacts section" id="contacts-id">
 		<div class="container">
 			<h2 class="contacts-title" aria-label="contacts title">Contacts</h2>
@@ -120,5 +153,6 @@
 			</p>
 		</div>
 	</footer>
+
 </body>
 </html>
